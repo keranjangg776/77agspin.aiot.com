@@ -1,0 +1,24 @@
+---
+layout: default
+title: Blog
+description: Artikel dan pembaruan informasi 77agspin — panduan, wawasan, dan berita ringkas.
+image: /assets/images/og-default.svg
+---
+
+{% include nav.html %}
+
+# Blog 77agspin
+
+Daftar artikel terbaru seputar **77agspin**. Untuk layanan inti, kunjungi [kunjungi 77agspin](https://77agspin.com).
+
+<ul class="wy-post-list">
+{% for post in site.posts %}
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+    <span class="wy-post-date">{{ post.date | date: "%d %b %Y" }}</span>
+    {% if post.excerpt %}<p>{{ post.excerpt | strip_html | truncate: 160 }}</p>{% endif %}
+  </li>
+{% endfor %}
+</ul>
+
+<p>Lihat juga <a href="/resources">sumber daya</a>, <a href="/about">tentang kami</a>, dan <a href="https://77agspin.com">kunjungi 77agspin</a>.</p>
