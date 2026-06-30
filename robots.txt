@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://77agspin.aiot.com/sitemap.xml
